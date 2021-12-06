@@ -28,10 +28,11 @@ public class GamblerSimulator {
 			int cash = stake;
 			while (cash > 0 && cash < goal) {
 				bets++;
-				if (Math.random() < 0.5) { cash++;   
-				System.out.println("Win");}
-				else {                    cash--;   
-				System.out.println("lose");
+				if (Math.random() < 0.5) {
+					cash++;   
+				}
+				else {   
+					cash--;   
 				}
 			}
 			if (cash == goal) wins++;                
